@@ -1,0 +1,70 @@
+.second-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .new {
+    text-align: start;
+    font-size: 48px;
+    font-weight: 600;
+    margin-left: -5px;
+  }
+  
+  .para {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .responsive-image {
+    width: 100%;   /* Ensure image takes the full width of its container */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image doesn't exceed the container width */
+    object-fit: contain;  /* This will make sure the entire image is visible */
+  }
+  
+  @media (max-width: 1024px) {
+    .new {
+      font-size: 36px;
+    }
+  
+    .para {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .new {
+      font-size: 28px;
+    }
+  
+    .para {
+      font-size: 12px;
+    }
+  
+    .cards-container {
+      padding: 0 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .new {
+      font-size: 22px;
+    }
+  
+    .para {
+      font-size: 10px;
+    }
+  }
+  

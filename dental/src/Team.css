@@ -1,0 +1,139 @@
+/* Container Styles */
+.team-container {
+    padding: 20px;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Section */
+.half-container {
+    width: 100%;
+    height: 435px;
+    background: rgba(1, 16, 22, 1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.team-header h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 1);
+}
+
+.team-header p {
+    max-width: 600px;
+    margin: 10px auto 0;
+    color: rgba(158, 158, 158, 1);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* Cards Grid */
+.team-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+    margin-top: -200px;
+    padding: 0 10px;
+}
+
+/* Individual Card Styles */
+.team-card {
+    margin-top: 90px;
+    width: 320px;
+    height: 353px;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Image */
+.team-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px 6px 0 0;
+}
+
+/* Card Title and Text */
+.team-card h3 {
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    margin-top:10px;
+}
+
+.team-card p {
+    font-size: 18px;
+    color: rgba(158, 158, 158, 1);
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.blogins {
+    background-color: rgba(245, 130, 32, 1);
+    color: white;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .team-header h1 {
+        font-size: 36px;
+        margin: 0 auto;
+    }
+
+    .team-header p {
+        font-size: 14px;
+    }
+
+    .team-cards {
+        margin-top: -150px; /* Adjust position for smaller screens */
+    }
+
+    .team-card {
+        width: 320px; /* Keep fixed width */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-header h1 {
+        font-size: 28px;
+    }
+
+    .team-header p {
+        font-size: 12px;
+    }
+
+    .team-cards {
+        margin-top: -120px;
+    }
+
+    .team-card h3 {
+        font-size: 22px;
+    }
+
+    .team-card p {
+        font-size: 14px;
+    }
+}

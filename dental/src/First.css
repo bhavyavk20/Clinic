@@ -1,0 +1,111 @@
+/* Custom background with right-aligned image */
+.custom-background {
+    background-color: #f8f9fae9;
+    background-image: url('./images/bg.png');
+    background-position: right; /* Align background image to the right */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto; /* Ensure it fills the height of the viewport */
+  }
+  
+  /* Move the text to the left */
+  .move-left {
+    padding-top:120px;
+    text-align: left; /* Ensure the text is aligned to the left */
+    margin-left: 0; /* Reset margin-left to prevent any offset */
+  }
+  
+  /* Styling for the text container */
+  .text-container {
+    text-align: left; /* Ensure text container aligns to the left */
+    padding-left: 30px; /* Add left padding to text */
+  }
+  
+  /* Styling for the Google Box */
+  .google-box {
+    width: 300px; /* Make the image responsive */
+    height: auto;
+    max-width: 500px; /* Set max width */
+    margin-left: 15px; /* Space from left */
+    margin-top: -20px;
+  }
+  
+  /* Positioning for the arrow image */
+  .arrow {
+    position: absolute;
+    top: 700px;
+    left: 100px;
+    width: 60px;
+    transform: translateY(-50%);
+  }
+  
+  /* Small image styling, aligned right */
+  .small-image {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 40px;
+    transform: translateY(-100%);
+    margin-left: auto;  /* Align it to the right */
+    display: block;  /* Ensure the image is treated as a block element */
+  }
+  
+  /* Positioning for the WhatsApp box */
+  .wtsp-box {
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-top: 100px;
+    transform: translateY(-50%);
+
+  }
+  
+  /* Styling for the long box image */
+  .long-box {
+    width: 100%;
+    max-width: 1400px; /* Ensure long box is responsive */
+    height: auto;
+    display: block;
+    margin-left: 60px;
+    margin-bottom: -120px;
+  }
+  
+  /* Section Styling for the second part */
+  .container-fluid {
+    padding: 0;
+  }
+  
+  .text-center {
+    color: white;
+    padding: 50px 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .custom-background {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align items to the start */
+      padding: 10px; /* Reduce padding for small screens */
+    }
+  
+    .text-container {
+      width: 100%; /* Use full width */
+      padding: 10px; /* Adjust padding */
+    }
+  
+    .google-box,
+    .arrow,
+    .small-image,
+    .wtsp-box,
+    .long-box {
+      margin: 10px auto; /* Center all images */
+    }
+  
+    .arrow {
+      width: 40px; /* Smaller arrow for smaller screens */
+    }
+  
+    .wtsp-box {
+      width: 80px; /* Smaller WhatsApp box */
+    }
+  }
